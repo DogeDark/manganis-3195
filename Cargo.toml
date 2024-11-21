@@ -1,0 +1,16 @@
+[package]
+name = "web-manganis-test-3195"
+version = "0.1.0"
+authors = ["Miles Murgaw <milesmurgaw@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dioxus = { git = "https://github.com/DioxusLabs/dioxus", rev = "refs/pull/3195/head", features = [
+] }
+dioxus-logger = "0.5"
+
+[features]
+default = ["web"]
+web = ["dioxus/web"]
